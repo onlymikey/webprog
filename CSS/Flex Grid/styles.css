@@ -1,0 +1,162 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FEFAE0;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #CCD5AE;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #CCD5AE;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Ejemplos Flexbox */
+.flex-container {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Paleta 1 para Flexbox */
+.flex1 {
+    background-color: #D1E9F6;
+    justify-content: center;
+}
+
+.flex2 {
+    background-color: #F6EACB;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex3 {
+    background-color: #F1D3CE;
+    justify-content: space-evenly;
+}
+
+.flex4 {
+    background-color: #EECAD5;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex5 {
+    background-color: #CCD5AE;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 150px;
+}
+
+/* Cajas Flexbox */
+.box {
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.box1 { background-color: #F6EACB; }
+.box2 { background-color: #D1E9F6; }
+.box3 { background-color: #EECAD5; }
+.box4 { background-color: #F1D3CE; }
+.box5 { background-color: #FAEDCE; }
+.box6 { background-color: #E0E5B6; }
+.box7 { background-color: #F6EACB; }
+.box8 { background-color: #D1E9F6; }
+.box9 { background-color: #F1D3CE; }
+.box10 { background-color: #EECAD5; }
+.box11 { background-color: #FAEDCE; }
+.box12 { background-color: #E0E5B6; }
+.box13 { background-color: #F6EACB; }
+.box14 { background-color: #D1E9F6; }
+.box15 { background-color: #F1D3CE; }
+
+/* Ejemplos Grid */
+.grid-container {
+    display: grid;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Paleta 2 para Grid */
+.grid1 {
+    background-color: #CCD5AE;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.grid2 {
+    background-color: #E0E5B6;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid3 {
+    background-color: #FAEDCE;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(2, 100px);
+    gap: 15px;
+}
+
+.grid4 {
+    background-color: #FEFAE0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.grid5 {
+    background-color: #D1E9F6;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+}
+
+/* Cajas Grid */
+.grid-item {
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.grid-item1 { background-color: #D1E9F6; }
+.grid-item2 { background-color: #F6EACB; }
+.grid-item3 { background-color: #EECAD5; }
+.grid-item4 { background-color: #F1D3CE; }
+.grid-item5 { background-color: #CCD5AE; }
+.grid-item6 { background-color: #FAEDCE; }
+.grid-item7 { background-color: #E0E5B6; }
+.grid-item8 { background-color: #F6EACB; }
+.grid-item9 { background-color: #F1D3CE; }
+.grid-item10 { background-color: #EECAD5; }
+.grid-item11 { background-color: #D1E9F6; }
+.grid-item12 { background-color: #CCD5AE; }
+.grid-item13 { background-color: #FAEDCE; }
+.grid-item14 { background-color: #E0E5B6; }
+.grid-item15 { background-color: #F6EACB; }
+.grid-item16 { background-color: #F1D3CE; }
+.grid-item17 { background-color: #EECAD5; }
+.grid-item18 { background-color: #D1E9F6; }

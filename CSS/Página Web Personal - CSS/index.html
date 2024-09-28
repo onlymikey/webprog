@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Angel López Bonilla - Desarrollador</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Archivo CSS externo -->
+</head>
+
+<body>
+
+<header>
+    <h1>Miguel Angel López Bonilla</h1>
+    <p>Desarrollador Web | Python | C | C++ | Java | Kotlin</p>
+</header>
+
+<nav>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+        <path d="M10 12h4v4h-4z" />
+      </svg>
+    <a href="#inicio" class="scroll-link">Inicio</a>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+      </svg>
+    <a href="#proyectos" class="scroll-link">Proyectos</a>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-at" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+        <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+      </svg>
+    <a href="#contacto" class="scroll-link">Contacto</a>
+</nav>
+
+<section id="inicio" class="hero">
+    <h2>Bienvenido a mi portafolio</h2>
+    <p>¡Explora mis proyectos y contáctame si tienes alguna pregunta!</p>
+    <a href="https://github.com/onlymikey?tab=repositories" class="boton">Ver Proyectos</a>
+</section>
+
+<section id="proyectos" class="section-bg"></section>
+
+<main class="contenedor sombra">
+    <h2>Mis Habilidades</h2>
+    <p>Me destaco principalmente en el desarrollo web, utilizando lenguajes como Python, C, C++, Java, y Kotlin.</p>
+</main>
+
+<section id="contacto" class="hero" style="background-color: #D1E9F6;">
+    <h2>Contacta conmigo</h2>
+    <p>Puedes ver más de mis proyectos en <a href="https://github.com/onlymikey?tab=repositories" style="color: #333;">mi GitHub</a>.</p>
+</section>
+
+<footer>
+    <p>© 2024 Miguel Angel López Bonilla - Todos los derechos reservados</p>
+</footer>
+
+<script>
+    // Scroll suave para los enlaces de navegación
+    document.querySelectorAll('.scroll-link').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            window.scrollTo({
+                top: target.offsetTop - 50,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
