@@ -1,0 +1,125 @@
+:root {
+    /* https://colorhunt.co/palettes/dark */
+    --negro: black;
+    --navy: #D1E9F6;
+    --purple: #F6EACB;
+    --pink: #F1D3CE;
+    --blanco: white;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* https://nekocalc.com/px-to-rem-converter */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Caveat', cursive, 'Roboto', sans-serif;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 120rem;
+    margin: 3rem auto;
+    justify-content: center;
+    align-items: baseline;
+    background-color: var(--navy); /* Cambiado a navy */
+    padding-top: 3rem;
+    margin-bottom: 0;
+}
+
+h1, h2, h3 {    
+    text-align: center;
+    color: var(--negro);
+    margin: 0;
+}
+
+.header-1 {
+    font-size: 3.5rem;
+    padding-bottom: 3rem;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 120rem;
+    height: auto;
+    background-color: var(--pink); /* Cambiado a pink */
+    padding-bottom: 3rem;   
+}
+
+.head-2 {
+    padding-top: 3rem;
+    font-size: 2.75rem;
+}
+
+.var-entradas {
+    margin: 1.5rem auto;
+    width: 80rem;
+    background-color: var(--purple); /* Cambiado a purple */
+    padding: 1.5rem 2.75rem;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    background-color: var(--pink); /* Cambiado a pink */
+    color: var(--negro);
+    font-size: 1.25rem;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 0.75rem 1.75rem;
+}
+
+label {
+    color: var(--negro);
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.input-data {
+    width: 100%;
+    height: 2.25rem;
+    font-size: 1.75rem;
+}
+
+.datos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    column-gap: 3.5rem;
+}
+
+.boton-alinear {    
+    width: 80rem;
+    margin: 3rem auto;
+    text-align: right;
+}
+
+.boton {
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.25rem 5.75rem;
+    font-size: 1.25rem;
+}
+
+.boton:hover {
+    background-color: var(--blanco);
+    color: var(--purple);
+    cursor: pointer;
+}
+
+.alinear-izquierda {
+    text-align: left;
+}
