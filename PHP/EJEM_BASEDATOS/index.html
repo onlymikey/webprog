@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="shortcut icon" href="./img/db.png" type="image/x-icon">
+    <title>Base de datos materiales</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <h1 class="header-1">Base de datos Materiales</h1>
+            <div class="imagen">
+                <img src="./img/db.png" alt="db">
+            </div>        
+        </header>
+         
+        <form action="registrar.php" method="post" onsubmit="return limpiarCampos()">
+            <fieldset>
+                <div class="pad-legend">
+                    <legend>Base de datos aluminios:</legend>
+                </div>
+                
+                <div class="campos">
+                    <div>
+                        <label class="etiqueta" for="">Material:</label>   
+                        <input class="input-text" placeholder="Material" type="text" name="material" id="material" >
+                    </div>
+                    <div>
+                        <label class="etiqueta" for="">Ftu (ksi):</label>   
+                        <input class="input-text" placeholder="Ftu (ksi)" type="number" name="ftu" id="ftu">
+                    </div>
+                    <div>
+                        <label class="etiqueta" for="">Fcu (ksi):</label>   
+                        <input class="input-text" placeholder="Fcu (ksi)" type="number" name="fcu" id="fcu">
+                    </div>
+                    <div>
+                        <label class="etiqueta" for="">Fyu (ksi):</label>   
+                        <input class="input-text" placeholder="Fyu (ksi)" type="number" name="fyu" id="fyu">
+                    </div>
+                    <div>
+                        <label class="etiqueta" for="">E (Msi):</label>   
+                        <input class="input-text" placeholder="E (Msi)" type="number" name="E" id="E">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="boton-margin">
+                <a style="text-decoration: none; margin-right: 2.5px;" class="boton" href="./tblMateriales.php">Ir a tabla de materiales</a>
+                <input class="boton" type="submit" value="Enviar">
+            </div>
+        </form>
+        <script>
+        function limpiarCampos() {
+            document.getElementById('material').value = '';
+            document.getElementById('ftu').value = '';
+            document.getElementById('fcu').value = '';
+            document.getElementById('fyu').value = '';
+            document.getElementById('E').value = '';
+            return true;
+        }
+        </script>
+    </div>
+
+</body>
+</html>
